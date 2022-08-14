@@ -13,7 +13,7 @@ function App() {
       <Navbar></Navbar>
       <Home id="home"></Home>
       <Links></Links>
-      {/* <About id="about"></About> */}
+      <About id="about"></About>
     </div>
   );
 }

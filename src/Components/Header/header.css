@@ -8,12 +8,14 @@
 }
 
 .header-image {
-    width: 50%
+    width: 50%;
 }
 
 .header-image img {
     width: 100%;
     border-radius: 20px;
+    min-width: 420px;
+
 }
 
 .header-info {
