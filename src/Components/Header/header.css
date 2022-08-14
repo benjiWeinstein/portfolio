@@ -13,7 +13,7 @@
 
 .header-image img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 0.2rem;
     min-width: 420px;
 
 }
@@ -22,9 +22,33 @@
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    margin-top: 10%;
-    /* align-items: center; */
+    margin: auto 0;
     justify-content: center;
     gap: 2rem;
-    /* text-align: center; */
+}
+
+@media screen and (max-width: 809px) {
+    .header-container {
+        flex-direction: column;
+        gap: 0;
+        padding-top: 0;
+    }
+    .header-image {
+        width: 100%;
+    }
+    .header-image img {
+        height: auto;
+    } 
+    .header-info {
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 495px) {
+    .header-container {
+        padding-top: 20px;
+    }
+
 }
