@@ -6,6 +6,7 @@ import Home from './Containers/Home/Home';
 import Links from './Containers/Links/Links';
 import Navbar from './Containers/Navbar/Navbar';
 import Portfolio from './Containers/Portfolio/Portfolio';
+import UpArrow from './Components/UpArrow/UpArrow';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Links></Links>
       <About></About>
       <Portfolio></Portfolio>
+      <UpArrow></UpArrow>
     </div>
   );
 }

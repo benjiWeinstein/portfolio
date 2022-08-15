@@ -5,12 +5,14 @@
     gap: 2rem ;
     padding: 1rem ;
     padding-top: 2rem;
+
 }
 
 .about-title {
     align-self: center;
 }
 .about-grid {
+    transition: all 1s ease-in-out;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;

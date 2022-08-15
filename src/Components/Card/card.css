@@ -1,10 +1,11 @@
 .card {
   position: relative;
   width: 300px;
-  height: max-content;
+  height: 350px;
   transform-style: preserve-3d;
   font-family: var(--font-family);
   transition: transform 400ms ease;
+
 }
 
 .card-front {
