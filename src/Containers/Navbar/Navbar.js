@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine, RiCodeSSlashLine } from "react-icons/ri";
 import "./navbar.css";
 
-const Menu = () => (
+const Menu = ({onClick}) => (
   <>
-    <p>
-      <a href="#home">Home</a>
+    <p >
+      <a href="#home" onClick={onClick}>Home</a>
     </p>
     <p>
-      <a href="#about">About</a>
+      <a href="#about" onClick={onClick}>About</a>
     </p>
     <p>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#portfolio" onClick={onClick}>Portfolio</a>
     </p>
     <p>
-      <a href="#contact">Contact Me</a>
+      <a href="#contact" onClick={onClick}>Contact Me</a>
     </p>
   </>
 );
@@ -34,10 +34,10 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-      <div className="navbar-menu">
+      <div className={`navbar-menu ${toggleMenu ? `navbar-menu-open` : ""}`}>
         {toggleMenu ? (
           <RiCloseLine
-            color="#000"
+            color="#fff"
             size={27}
             onClick={() => setToggleMenu(false)}
           />
@@ -51,7 +51,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="navbar-menu_container scale-up-center">
             <div className="navbar-menu_container-links">
-              <Menu/>
+              <Menu onClick={() => setToggleMenu(false)}/>
             </div>
           </div>
         )}

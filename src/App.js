@@ -5,15 +5,17 @@ import About from './Containers/About/About';
 import Home from './Containers/Home/Home';
 import Links from './Containers/Links/Links';
 import Navbar from './Containers/Navbar/Navbar';
+import Portfolio from './Containers/Portfolio/Portfolio';
 
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       <Navbar></Navbar>
-      <Home id="home"></Home>
+      <Home ></Home>
       <Links></Links>
-      <About id="about"></About>
+      <About></About>
+      <Portfolio></Portfolio>
     </div>
   );
 }

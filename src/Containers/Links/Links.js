@@ -1,14 +1,20 @@
-import React from 'react'
-import './links.css'
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import React from "react";
+import "./links.css";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
 const Links = () => {
   return (
-    <div className='links-container'>
-        <AiFillLinkedin size={'50'}></AiFillLinkedin>
-        <AiFillGithub size={'50'}></AiFillGithub>
-    </div>
-  )
-}
+    <div className="links-container">
+      <a href="https://www.linkedin.com/in/benjamin-weinstein-b39667204/" target="_blank">
+        <AiFillLinkedin size={"50"}></AiFillLinkedin>
+      </a>
 
-export default Links
+      <a href="https://github.com/benjiWeinstein" target="_blank">
+        {" "}
+        <AiFillGithub size={"50"}></AiFillGithub>
+      </a>
+    </div>
+  );
+};
+
+export default Links;

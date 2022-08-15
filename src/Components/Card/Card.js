@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./card.css";
 
-const Card = ({ img, title, text, extraClass, iconClass, lastCard }) => {
+const Card = ({ img, title, text, iconClass, lastCard }) => {
     const [flipClass, setFlipClass] = useState('')
   return (
     <div className={`card ${flipClass} ${lastCard ? `card-last` : ""}`}>
       <div className="card-front">
         <div className="card-body">
-          <img className={`card-image ${extraClass}`} src={img} alt="" />
+          <img className={`card-image`} src={img} alt="" />
           <h2 className="card-title">{title}</h2>
-          {/* <p className="card-text">{text}</p> */}
+          <p className="card-text">{text}</p>
         </div>
         <button className="card-btn" onClick={() => {setFlipClass('card-flip')}}>More Details</button>
       </div>
